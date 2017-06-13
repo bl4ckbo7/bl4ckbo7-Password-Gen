@@ -12,7 +12,7 @@ using namespace std;
 
 char welcomePasswordGenerator(){
 
-    cout<<"\n==========[BL4CKBO7 PASSWORD GENERATOR] v1.0.2017========\n\n";
+    cout<<"\n==========[BL4CKBO7 PASSWORD GENERATOR] v0.2.2017========\n\n";
     cout<<"==============DEVELOPED BY ANDY KAWA CYBERLABS============\n\n\n\n\n\n";
 return 0;
 }
@@ -76,11 +76,11 @@ char genUpperLowerSpecialChars()
 
 int comboMenu(){
     //to be executed by conditional constructs
-    cout<<"1. Uppercase and Lowercase Only\n";
-    cout<<"2. Uppercase and Numerals Only\n";
-    cout<<"3. Lowercase and Numerals Only\n";
-    cout<<"4. Lowercase, Uppercase and Numerals Only\n";
-    cout<<"5. Uppercase, Lowercase and Special Characters Only\n";
+    cout<<"1) Uppercase and Lowercase Only\n";
+    cout<<"2) Uppercase and Numerals Only\n";
+    cout<<"3) Lowercase and Numerals Only\n";
+    cout<<"4) Lowercase, Uppercase and Numerals Only\n";
+    cout<<"5) Uppercase, Lowercase and Special Characters Only\n";
 return 0;
 }
 
@@ -97,9 +97,16 @@ int quitBo7(){
         system("cls");
         main();
      }
-     else if((exit == 'Y')||(exit == 'y')){
+     else if(exit == 'Y'){
         system("cls");
         system("exit");
+     }
+     else {
+        cin.clear();
+        cin.ignore(1000, '\n');
+        system("cls");
+        cerr<<"Wrong input! Choose either (Y/n).\nRemember it's Case Sensitive!\n\n";
+        quitBo7();
      }
 return 0;
 }
@@ -113,26 +120,26 @@ char savePassword(std::string Str){
     len = sizeof(Str);
     //freezes the system accordingly just after computing the size of string
     if (len>32){
-        _sleep(5000);
+        _sleep(500);
 
         ofstream passwordFile;
-        passwordFile.open("Password.txt");
+        passwordFile.open("Password.txt", ios::out|ios::app);
 
-        passwordFile<<"Password: "<<Str;
+        passwordFile<<"Password: "<<Str <<endl;
 
         cout<<"File Saved Successfully! \n\n";
-        _sleep(4500);
+        _sleep(450);
         system("cls");
     }
     else{
-        _sleep(3000);
+        _sleep(300);
         ofstream passwordFile;
-        passwordFile.open("Password.txt");
+        passwordFile.open("Password.txt", ios::out|ios::app);
 
-        passwordFile<<"Password: "<<Str;
+        passwordFile<<"Password: "<<Str <<endl;
 
         cout<<"File Saved Successfully! \n\n";
-        _sleep(1500);
+        _sleep(150);
         system("cls");
     }
 return 0;
