@@ -3,7 +3,6 @@
  **Latest updates March 21, 2017
  **Created by Andy Kawa - bl4ckbo7
 */
-
 #include <iostream>
 #include <cstring>
 #include <cstdlib>
