@@ -9,9 +9,6 @@
 #include <cstdlib>
 #include <ctime>
 #include <iomanip>
-#include "boost/filesystem/operations.hpp"
-#include "boost/filesystem/path.hpp"
-#include "boost/progress.hpp"
 #include "passwordsHeader.h"
 #include "passwordsGen.cpp"
 
