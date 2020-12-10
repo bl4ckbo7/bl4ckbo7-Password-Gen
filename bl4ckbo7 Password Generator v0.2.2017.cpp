@@ -1,7 +1,7 @@
 /*
  bl4ckbo7 password generator v0.2.2017
  **Latest updates March 21, 2017
- **Created by Andy Kawa - bl4ckbo7
+ **Created by bl4ckbo7
 */
 #include <iostream>
 #include <cstring>
