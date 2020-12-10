@@ -1,5 +1,5 @@
 /*Password Generator Source Code File for PasswordsHeader*/
-/*Created by Andy Kawa-bl4ckbo7*/
+/*Created by bl4ckbo7*/
 #include <iostream>
 #include <cstdlib>
 #include <stdio.h>
@@ -13,7 +13,6 @@ using namespace std;
 char welcomePasswordGenerator(){
 
     cout<<"\n==========[BL4CKBO7 PASSWORD GENERATOR] v0.2.2017========\n\n";
-    cout<<"==============DEVELOPED BY ANDY KAWA CYBERLABS============\n\n\n\n\n\n";
 return 0;
 }
 
